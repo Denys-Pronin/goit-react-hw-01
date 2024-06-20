@@ -1,0 +1,25 @@
+.table {
+  width: 742px;
+  margin: 0 auto;
+  border: 2px solid #252525;
+  border-spacing: 0;
+  text-align: center;
+}
+th {
+  padding: 8px 0;
+}
+
+.tableHead {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+td {
+  border: 1px solid #252525;
+  padding: 8px 0;
+  flex-shrink: 0;
+}
+
+tr:nth-child(even) {
+  background-color: #d3d3d3;
+}
