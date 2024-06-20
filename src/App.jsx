@@ -1,9 +1,9 @@
 import "./App.css";
-import ReactDOM from "react-dom/client";
-import React from "react";
+
 import Profile from "./components/Profile/Profile";
 import userData from "./userData.json";
 import FriendList from "./components/FriendList/FriendList";
+import friends from "./friends.json";
 
 const App = () => {
   return (
@@ -15,28 +15,9 @@ const App = () => {
         image={userData.avatar}
         stats={userData.stats}
       />
-      <FriendList
-        avatar={friends.avatar}
-        name={friends.name}
-        isOnline={friends.isOnline}
-      />
+      <FriendList friends={friends} />
     </>
   );
 };
-
-const friends = [
-  {
-    avatar: "https://cdn-icons-png.flaticon.com/512/1998/1998592.png",
-    name: "Mango",
-    isOnline: true,
-    id: 1812,
-  },
-];
-
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
 export default App;

@@ -1,23 +1,20 @@
 import css from "./FriendList.module.css";
+import FriendListItem from "./FriendListItem";
 
-// const FriendListItem = ({ avatar, name, isOnline }) => {
-//   return (
-//     <div>
-//       <img src={avatar} alt={name} width="48" />
-//       <p>{name}</p>
-//       <p className={isOnline}>{isOnline ? "Online" : "Offline"}</p>
-//     </div>
-//   );
-// };
-
-const FriendList = ({ avatar, name, isOnline }) => {
-  console.log(avatar);
+const FriendList = ({ friends }) => {
   return (
-    <ul>
-      {/* Кількість li залежить від кількості об'єктів в масиві */}
-      <li>
-        {/* <FriendListItem avatar={avatar} name={name} isOnline={isOnline} /> */}
-      </li>
+    <ul className={css.friendList}>
+      {friends.map((friend) => {
+        return (
+          <FriendListItem
+            key={friend.id}
+            avatar={friend.avatar}
+            name={friend.name}
+            isOnline={friend.isOnline}
+            id={friend.id}
+          />
+        );
+      })}
     </ul>
   );
 };
