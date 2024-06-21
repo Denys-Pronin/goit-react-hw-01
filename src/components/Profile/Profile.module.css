@@ -1,11 +1,14 @@
 body {
   justify-content: center;
+  padding: 50px 0;
 }
 .container {
+  width: 450px;
   border: 6px solid #252525;
   padding-top: 44px;
   border-radius: 20px;
   text-align: center;
+  margin: 0 auto;
   margin-bottom: 24px;
 }
 
@@ -56,4 +59,10 @@ body {
 
 .accent {
   font-weight: 800;
+}
+
+.img {
+  width: 268px;
+  background-color: #2a2a2a;
+  border-radius: 50%;
 }
