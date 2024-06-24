@@ -1,0 +1,21 @@
+p {
+  margin: 0;
+}
+
+.friend {
+  border: 2px solid #252525;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.name {
+  margin-bottom: 8px;
+}
+
+.online {
+  color: green;
+}
+.offline {
+  color: red;
+}
